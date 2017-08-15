@@ -1,0 +1,80 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+.box {
+  background-image: url("../images/back.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.texist {
+  text-align:center;
+
+}  
+.container {
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
+  /*border: solid 1px green;*/
+}
+.box2 {
+  float: left;
+  width: 31%;
+  /*border: solid 1px green;*/
+  margin:0 1% 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.texist {
+  text-align:center;
+
+} 
+.button-contact {
+  text-align:center;
+
+} 
+footer {
+   background-color: green;
+   padding: 30px;
+}
+p.ttl{
+   background-color: green;
+   color:#fff;
+   padding:10px/*上下のスタイル*/ 0px/*横幅のスタイル*/;
+   text-align:center;
+}
+
+p.txt{
+  background-color:#CCFFCC;
+  padding:20px;
+   text-align:center;
+}
+.button-contact{
+    display: inline-block;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.button-contact:hover {
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+@media (max-width: 768px) {
+
+.box2 {
+  width: 98%;
+}
+
+.box {
+  height: 250px;
+}
